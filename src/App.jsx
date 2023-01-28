@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Welcome from './Welcome';
 import Quiz from './Quiz';
 
 export default function App() {
-  const [isStarted, setIsStarted] = React.useState(true);
-  const [quiz, setQuiz] = React.useState([]);
+  const [isStarted, setIsStarted] = useState(true);
+  const [quiz, setQuiz] = useState([]);
 
   function unEscape(htmlStr) {
     htmlStr = htmlStr.replace(/&lt;/g, '<');
