@@ -1,5 +1,5 @@
 import React from 'react';
-import PrintAnswers from './PrintAnswers';
+import SelectAnswer from './SelectAnswer';
 
 export default function Quiz(props) {
   //
@@ -14,7 +14,7 @@ export default function Quiz(props) {
       <div className='question-frame'>
         <div className='question-cont'>
           <h2 className='question'>{ask}</h2>
-          <PrintAnswers
+          <SelectAnswer
             mixedAnswers={mixedAnswers}
             correctAnswer={correctAnswer}
             wrongAnswers={wrongAnswers}
