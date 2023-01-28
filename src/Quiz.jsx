@@ -3,7 +3,7 @@ import SelectAnswer from './SelectAnswer';
 
 export default function Quiz(props) {
   //
-  const renderQuestions = props.data.map((qst, i) => {
+  const renderQuestions = props.data.map((qst) => {
     //Destructure each quiz set
     const { ask, wrongAnswers, correctAnswer } = qst;
     const mixedAnswers = [...wrongAnswers, correctAnswer].sort(
